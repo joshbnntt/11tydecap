@@ -1,0 +1,17 @@
+---
+layout: blog
+pagination:
+    data: collections
+    size: 1
+    alias: tag
+permalink: /tags/{{ tag | slugify }}/
+eleventyComputed:
+    title: "Posts tagged with {{ tag }}"
+    description: "Posts tagged with {{ tag }}"
+---
+
+<section class="mt-15">
+    {% set postslist = collections[tag] %}
+
+    {% include ".././_includes/partials/postsList.html" %}
+</section>

@@ -1,0 +1,16 @@
+---
+layout: default
+title: Tags
+path: tags
+---
+
+<div class="container max-w-3xl mt-6 px-6">
+  <section class="flex flex-wrap gap-2 w-full justify-center">
+    {%- for tag, posts in collections | dictsort %}
+      <a href="/tags/{{tag}}" class="p-4 border border-slate-400 block w-60">
+        <h2><strong>{{ tag | title}}</strong></h2> 
+        <p class="font-light"><strong>{{ posts | length }}</strong> posts </p>
+      </a>
+    {%- endfor %}
+  </section>
+</div>
