@@ -1,5 +1,5 @@
 ---
 title: About
-layout: default
+layout: blog
 ---
 ## Here is some text about this
