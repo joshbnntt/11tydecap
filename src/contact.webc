@@ -1,0 +1,17 @@
+---
+layout: default
+title: Contact
+---
+
+<h1 @text="title"></h1>
+<br />
+
+<section>
+  <h3 webc:for="post of collections.post">
+    <a :href="post.url" @text="post.data.title"></a>
+  </h3>
+</section>
+
+<section class="w-6/12 mx-auto">
+  <my-form></my-form>
+</section>

@@ -1,0 +1,49 @@
+<form action="" class="flex flex-col gap-2 w-full mx-auto" :id="`form_${uid}`">
+  <fieldset class="flex gap-2">
+    <div class="p-2 flex flex-col">
+      <label for="fname">First Name</label>
+      <input
+        type="text"
+        name="First Name"
+        :id="`fname_${uid}`"
+        placeholder="John"
+        class="outline-0 border-b-2 border-b-black focus:border-b-blue-700"
+      />
+    </div>
+    <div class="p-2 flex flex-col">
+      <label for="lname">Last Name</label>
+      <input
+        type="text"
+        name="Last Name"
+        :id="`lname_${uid}`"
+        placeholder="Smith"
+        class="outline-0 border-b-2 border-b-black focus:border-b-blue-700"
+      />
+    </div>
+  </fieldset>
+  <fieldset class="flex gap-2">
+    <div class="p-2 flex flex-col">
+      <label for="email">Email</label>
+      <input
+        type="text"
+        name="Email"
+        :id="`email_${uid}`"
+        placeholder="john.smith@email.com"
+        class="outline-0 border-b-2 border-b-black focus:border-b-blue-700"
+      />
+    </div>
+    <div class="p-2 flex flex-col">
+      <label for="phone">Phone</label>
+      <input
+        type="text"
+        name="Phone"
+        :id="`phone_${uid}`"
+        placeholder="555-555-5555"
+        class="outline-0 border-b-2 border-b-black focus:border-b-blue-700"
+      />
+    </div>
+  </fieldset>
+  <div class="p-2">
+    <button type="submit" class="border p-2">Submit</button>
+  </div>
+</form>
