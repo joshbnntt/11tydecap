@@ -1,6 +1,7 @@
----
 items:
+  - text: About
+    url: /about
   - text: Blog
-    url: "/blog"
+    url: /blog
   - text: Tags
-    url: "/tags"
+    url: /tags
